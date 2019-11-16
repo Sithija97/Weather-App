@@ -29,5 +29,8 @@ window.addEventListener("load", ()=>{
                         locationTimezone.textContent = data.timezone;
                     });
             });
-    }
+    }//navigator method
+
+    
+
 })
