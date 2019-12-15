@@ -24,7 +24,7 @@ window.addEventListener("load", ()=>{
                         console.log(data);
                         const {temperature, summary, icon} = data.currently;
                         //set Dom elemetns from the API
-                        temperatureDegree.textContent = temperature;
+                        temperatureDegree.textContent = Math.floor((temperature - 32) / (9/5));
                         temperatureDescription.textContent = summary;
                         locationTimezone.textContent = data.timezone;
                         //set Icon
